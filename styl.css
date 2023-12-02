@@ -1,0 +1,8 @@
+.heading {
+    background: red;
+    color: beige;
+    border-radius: 10px;
+    border: 10px dotted black;
+    padding: 10px;
+    margin: 10px;
+}
