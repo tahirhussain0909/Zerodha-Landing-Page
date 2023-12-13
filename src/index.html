@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
             Zerodha - Online stock trading at lowest prices from India's biggest
             stock broker – Zerodha
         </title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <div>
-            <img width="150" src="../assets/images/logo.svg" />
-            <span>Signup</span>
-            <span>About</span>
-            <span>Products</span>
-            <span>Pricing</span>
-            <span>Support</span>
+        <div class="TopBar">
+            <div class="TopBarLogo">
+                <img class="TopImage" src="../assets/images/logo.svg" />
+            </div>
+            <div class="TopNavBar">
+                <div class="TopNavBarElementFirst">Signup</div>
+                <div class="TopNavBarElementSecond">About</div>
+                <div class="TopNavBarElementThird">Products</div>
+                <div class="TopNavBarElementFourth">Pricing</div>
+                <div class="TopNavBarElementFifth">Support</div>
+            </div>
         </div>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <div class="CenterPageImage">
+            <img class="CenterImage" src="../assets/images/landing.png" />
+        </div>
 
-        <center>
-            <img width="800" src="../assets/images/landing.png" />
-        </center>
+        <div class="CenterHeadingDiv">
+            <h1 id="thefirstHeading" class="FirstCenterHeading">
+                Invest in everything
+            </h1>
+            <h5 class="SecondCenterHeading">
+                Online platform to invest in stocks, derivatives, mutual funds,
+                and more
+            </h5>
+        </div>
 
-        <br />
-        <br />
+        <div class="SignUpButtonDiv">
+            <div class="SignUpButton">Sign up now</div>
+        </div>
 
-        <center>
+        <div class="SignUpButtonBelowDiv"></div>
+
+        <div class="calculator-grid">
             <div>
-                <h1>Invest in everything</h1>
-                <h2>
-                    Online platform to invest in stocks, derivatives, mutual
-                    funds, and more
-                </h2>
-                <br />
-                <br />
-                <button>Sign up now</button>
+                <h1>PortFolio Return Calculator</h1>
             </div>
-        </center>
+            <div class="output">
+                <div class="result">
+                    Your Return: <span id="calculationResult"></span>
+                </div>
+            </div>
+            <input
+                class="span-this"
+                id="firstInput"
+                placeholder="Capital"
+                type="text"
+            />
+            <input
+                class="span-this"
+                id="secondInput"
+                placeholder="Years"
+                type="text"
+            />
+            <input
+                class="span-this"
+                id="thirdInput"
+                placeholder="Interest"
+                type="text"
+            />
+            <button class="span-two" onclick="calculate()">Calculate</button>
+        </div>
     </body>
 </html>

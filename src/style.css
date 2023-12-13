@@ -1,0 +1,176 @@
+.TopBar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 400px;
+    padding-right: 400px;
+    box-shadow: 2px 1px 2px #eee;
+}
+
+.TopBarLogo {
+    display: flex;
+    padding: 20px;
+}
+
+.TopImage {
+    height: 17px;
+}
+
+.TopNavBar {
+    display: flex;
+    font-family: sans-serif;
+}
+
+.TopNavBarElementFirst {
+    padding: 20px;
+    color: #666666;
+    font-size: 14.4px;
+    cursor: pointer;
+}
+
+.TopNavBarElementSecond {
+    padding: 20px;
+    color: #666666;
+    font-size: 14.4px;
+    cursor: pointer;
+}
+
+.TopNavBarElementThird {
+    padding: 20px;
+    color: #666666;
+    font-size: 14.4px;
+    cursor: pointer;
+}
+
+.TopNavBarElementFourth {
+    padding: 20px;
+    color: #666666;
+    font-size: 14.4px;
+    cursor: pointer;
+}
+
+.TopNavBarElementFifth {
+    padding: 20px;
+    color: #666666;
+    font-size: 14.4px;
+    cursor: pointer;
+}
+
+.CenterPageImage {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.CenterImage {
+    width: 1000px;
+}
+
+.CenterHeadingDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.FirstCenterHeading {
+    color: #424242;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 550;
+}
+.SecondCenterHeading {
+    color: #424242;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: lighter;
+}
+
+.SignUpButtonDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.SignUpButton {
+    font-weight: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: rgb(31, 119, 201);
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px 30px 10px 30px;
+    transition: transform 0.2s ease;
+}
+
+.SignUpButtonBelowDiv {
+    padding-bottom: 130px;
+}
+
+.SignUpButton:active {
+    transform: scale(0.95); /* Scale down the button slightly when clicked */
+}
+
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #0af, #00ff6c);
+} */
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    padding: 0;
+    margin: 0;
+    /* background: linear-gradient(to right, #0af, #00ff6c); */
+}
+
+.calculator-grid > input {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(31, 27, 27, 0.75);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.span-two {
+    border-radius: 10px;
+    grid-column: span 4;
+    font-size: 24px;
+}
+
+.span-this {
+    grid-column: span 4;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
